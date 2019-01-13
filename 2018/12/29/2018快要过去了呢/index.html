@@ -60,7 +60,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xinyaoshen.github.io/2018/12/29/2018快要过去了呢/" data-id="cjquwiuav0000lw9vviqx5c4h" class="article-share-link">Share</a>
+      <a data-url="http://xinyaoshen.github.io/2018/12/29/2018快要过去了呢/" data-id="cjquwnxvv0000nx9vxcu5nk9b" class="article-share-link">Share</a>
       
     </footer>
 
@@ -93,14 +93,30 @@
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <footer class="footer">
   
-  <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-  <span class="post-meta-divider">|</span>
-  <span id="busuanzi_container_site_uv">总访客<span id="busuanzi_value_site_uv"></span>人</span>
-  <span class="post-meta-divider">|</span>
+
   <div class="outer">
     <ul class="list-inline">
-      <li>&copy; 2019 sxy的博客</li>
+      <li><span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv"></span> 次</span></li>
+      <li><span id="busuanzi_container_site_uv">总访客 <span id="busuanzi_value_site_uv"></span> 人</span></li>
+      <li><span id="timeDate">载入天数...</span><span id="times">&nbsp;&nbsp;&nbsp;载入时分秒...</span></li>
     </ul>
+    <div>&copy; 2019 sxy的博客</div>
+    <script>
+        var now = new Date();
+        function createtime() {
+        var grt= new Date("11/01/2018 22:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()",250);
+    </script>
   </div>
 </footer>
 
