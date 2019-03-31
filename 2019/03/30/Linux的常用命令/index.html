@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="##创建目录：mkdir 目录名 ##删除文件或文件夹：rm 文件名rm -r 文件夹 ##查看当前目录下文件lsls -a（全部）ls -l（细节） 转到目录下cd 目录路径（例如./sxy/2019/03/31）cd .（当前目录）cd ..（上一目录） ##文件夹重命名或移动重命名：mv a（旧的） b（新的名字）移动：mv a /b/c（把a移到b下面，并重命名为c） 文件或文件夹的拷贝c">
+  <meta name="description" content="创建目录：mkdir 目录名">
 <meta name="keywords" content="关键词">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux的常用命令">
 <meta property="og:url" content="http://xinyaoshen.github.io/2019/03/30/Linux的常用命令/index.html">
 <meta property="og:site_name" content="sxy的博客">
-<meta property="og:description" content="##创建目录：mkdir 目录名 ##删除文件或文件夹：rm 文件名rm -r 文件夹 ##查看当前目录下文件lsls -a（全部）ls -l（细节） 转到目录下cd 目录路径（例如./sxy/2019/03/31）cd .（当前目录）cd ..（上一目录） ##文件夹重命名或移动重命名：mv a（旧的） b（新的名字）移动：mv a /b/c（把a移到b下面，并重命名为c） 文件或文件夹的拷贝c">
+<meta property="og:description" content="创建目录：mkdir 目录名">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-31T14:00:09.550Z">
+<meta property="og:updated_time" content="2019-03-31T15:13:18.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux的常用命令">
-<meta name="twitter:description" content="##创建目录：mkdir 目录名 ##删除文件或文件夹：rm 文件名rm -r 文件夹 ##查看当前目录下文件lsls -a（全部）ls -l（细节） 转到目录下cd 目录路径（例如./sxy/2019/03/31）cd .（当前目录）cd ..（上一目录） ##文件夹重命名或移动重命名：mv a（旧的） b（新的名字）移动：mv a /b/c（把a移到b下面，并重命名为c） 文件或文件夹的拷贝c">
+<meta name="twitter:description" content="创建目录：mkdir 目录名">
 
 
 
@@ -353,7 +353,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-31 22:00:09" itemprop="dateModified" datetime="2019-03-31T22:00:09+08:00">2019-03-31</time>
+                <time title="修改时间：2019-03-31 23:13:18" itemprop="dateModified" datetime="2019-03-31T23:13:18+08:00">2019-03-31</time>
               
             
           </span>
@@ -400,16 +400,17 @@
       
 
       
-        <p>##创建目录：<br>mkdir 目录名</p>
-<p>##删除文件或文件夹：<br>rm 文件名<br>rm -r 文件夹</p>
-<p>##查看当前目录下文件<br>ls<br>ls -a（全部）<br>ls -l（细节）</p>
+        <h2 id="创建目录："><a href="#创建目录：" class="headerlink" title="创建目录："></a>创建目录：</h2><p>mkdir 目录名</p>
+<a id="more"></a>
+<h2 id="删除文件或文件夹："><a href="#删除文件或文件夹：" class="headerlink" title="删除文件或文件夹："></a>删除文件或文件夹：</h2><p>rm 文件名<br>rm -r 文件夹</p>
+<h2 id="查看当前目录下文件"><a href="#查看当前目录下文件" class="headerlink" title="查看当前目录下文件"></a>查看当前目录下文件</h2><p>ls<br>ls -a（全部）<br>ls -l（细节）</p>
 <h2 id="转到目录下"><a href="#转到目录下" class="headerlink" title="转到目录下"></a>转到目录下</h2><p>cd 目录路径（例如./sxy/2019/03/31）<br>cd .（当前目录）<br>cd ..（上一目录）</p>
-<p>##文件夹重命名或移动<br>重命名：mv a（旧的） b（新的名字）<br>移动：mv a /b/c（把a移到b下面，并重命名为c）</p>
+<h2 id="文件夹重命名或移动"><a href="#文件夹重命名或移动" class="headerlink" title="文件夹重命名或移动"></a>文件夹重命名或移动</h2><p>重命名：mv a（旧的） b（新的名字）<br>移动：mv a /b/c（把a移到b下面，并重命名为c）</p>
 <h2 id="文件或文件夹的拷贝"><a href="#文件或文件夹的拷贝" class="headerlink" title="文件或文件夹的拷贝"></a>文件或文件夹的拷贝</h2><p>cp (-r) 当前文件 目标路径<br>主机与服务器之间的拷贝（在主机上操作）：scp (-r) 当前文件 目标路径<br>从主机到服务器：scp (-P 端口号) (-r) 主机路径 root@地址:/服务器上的目标路径<br>从服务器到主机：scp (-r) root@地址:/服务器上的目标路径 主机路径</p>
-<p>##mac远程连接Linux系统<br>（可能需要获取接入Linux的权限，在Linux上添加mac的ssh公钥）：<br>ssh root@地址<br>ssh -p 端口号 root@地址</p>
-<p>##Linux下查看配置<br>nvidia-smi</p>
-<p>##查看进程<br>ps<br>ps -a （全部）<br>ps -xef （细节）<br>kill -9 进程号 （kill进程）</p>
-<p>##解压缩<br>tar zxvf 文件名.tgz -C 解压到哪个目录</p>
+<h2 id="mac远程连接Linux系统"><a href="#mac远程连接Linux系统" class="headerlink" title="mac远程连接Linux系统"></a>mac远程连接Linux系统</h2><p>（可能需要获取接入Linux的权限，在Linux上添加mac的ssh公钥）：<br>ssh root@地址<br>ssh -p 端口号 root@地址</p>
+<h2 id="Linux下查看配置"><a href="#Linux下查看配置" class="headerlink" title="Linux下查看配置"></a>Linux下查看配置</h2><p>nvidia-smi</p>
+<h2 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h2><p>ps<br>ps -a （全部）<br>ps -xef （细节）<br>kill -9 进程号 （kill进程）</p>
+<h2 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h2><p>tar zxvf 文件名.tgz -C 解压到哪个目录</p>
 
       
     </div>
@@ -562,7 +563,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#转到目录下"><span class="nav-number">1.</span> <span class="nav-text">转到目录下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件或文件夹的拷贝"><span class="nav-number">2.</span> <span class="nav-text">文件或文件夹的拷贝</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建目录："><span class="nav-number">1.</span> <span class="nav-text">创建目录：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件或文件夹："><span class="nav-number">2.</span> <span class="nav-text">删除文件或文件夹：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看当前目录下文件"><span class="nav-number">3.</span> <span class="nav-text">查看当前目录下文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转到目录下"><span class="nav-number">4.</span> <span class="nav-text">转到目录下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件夹重命名或移动"><span class="nav-number">5.</span> <span class="nav-text">文件夹重命名或移动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件或文件夹的拷贝"><span class="nav-number">6.</span> <span class="nav-text">文件或文件夹的拷贝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mac远程连接Linux系统"><span class="nav-number">7.</span> <span class="nav-text">mac远程连接Linux系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux下查看配置"><span class="nav-number">8.</span> <span class="nav-text">Linux下查看配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看进程"><span class="nav-number">9.</span> <span class="nav-text">查看进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解压缩"><span class="nav-number">10.</span> <span class="nav-text">解压缩</span></a></li></ol></div>
             
 
           </div>
